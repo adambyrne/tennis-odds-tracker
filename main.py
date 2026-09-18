@@ -6,6 +6,8 @@ matches = [
         "id": 1,
         "player1": "Novak Djokovic",
         "player2": "Carlos Alcaraz",
+        "ranking1": 2,
+        "ranking2":1,
         "odds_player1": 1.80,
         "odds_player2": 2.05
     },
@@ -13,6 +15,8 @@ matches = [
         "id": 2,
         "player1": "Jannik Sinner",
         "player2": "Daniil Medveddev",
+        "ranking1": 3,
+        "ranking2": 5,
         "odds_player1": 1.65,
         "odds_player2": 2.30
     },
@@ -20,6 +24,8 @@ matches = [
         "id": 3,
         "player1": "Taylor Fritz",
         "player2": "Alexander Zverev",
+        "ranking1": 12,
+        "ranking2": 8,
         "odds_player1": 2.10,
         "odds_player2": 1.72
     }
@@ -32,7 +38,7 @@ betting_history = []
 def display_matches():
     print("\n=== Tennis Matches ===\n")
     for match in matches:
-        print(f"Match {match['id']}: {match['player1']} vs {match['player2']}")
+        print(f"Match {match['id']}: {match['player1']} (#{match['ranking1']}) vs {match['player2']} (#{match['ranking2']})")
         print(f" Odds - {match['player1']}: {match['odds_player1']} | {match['player2']}: {match['odds_player2']}")
         print()
 
